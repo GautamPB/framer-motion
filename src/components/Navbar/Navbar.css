@@ -1,0 +1,12 @@
+.navbar {
+    display: flex;
+    flex: 1;
+    margin: 1rem 3rem;
+    border-bottom: solid 0.05rem white;
+    padding-bottom: 0.75rem;
+}
+
+.navbar > h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
