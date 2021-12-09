@@ -33,7 +33,7 @@ const Topping = ({ addPizzaToppings, pizzaToppings }) => {
                 ))}
             </div>
 
-            {pizzaToppings ? (
+            {pizzaToppings.length ? (
                 <Link to="/order">
                     <button className="toppings__nextButton">Next</button>
                 </Link>

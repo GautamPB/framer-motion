@@ -1,0 +1,35 @@
+.order {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order > h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.order__summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.order__summary > p {
+    font-size: 30px;
+    margin: 2rem 0rem;
+}
+
+.order__summaryToppings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order__summaryToppings > p {
+    margin-bottom: 5px;
+    font-size: 20px;
+}

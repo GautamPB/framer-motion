@@ -53,7 +53,16 @@ const App = () => {
                     }
                 />
 
-                <Route exact path="/order" element={<Order />} />
+                <Route
+                    exact
+                    path="/order"
+                    element={
+                        <Order
+                            pizzaBase={pizza.base}
+                            pizzaToppings={pizza.toppings}
+                        />
+                    }
+                />
             </Routes>
         </Router>
     )
