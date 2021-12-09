@@ -1,4 +1,5 @@
 import './Navbar.css'
+import { motion } from 'framer-motion'
 
 const Navbar = () => {
     return (
@@ -7,7 +8,9 @@ const Navbar = () => {
                 src="https://p1.hiclipart.com/preview/539/999/701/pizza-hut-logo-pizza-pizza-company-italian-cuisine-food-pepperoni-fast-food-helmet-png-clipart.jpg"
                 alt=""
             /> */}
-            <h1>Pizza Joint</h1>
+            <motion.h1 initial={{ y: -250 }} animate={{ y: -10 }}>
+                Pizza Joint
+            </motion.h1>
         </div>
     )
 }

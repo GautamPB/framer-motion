@@ -1,5 +1,6 @@
 import './Base.css'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const Base = ({ setPizzaBase, baseName }) => {
     const bases = ['Classic', 'Thin and Crispy', 'Thick Crust']
@@ -29,9 +30,18 @@ const Base = ({ setPizzaBase, baseName }) => {
             </div>
 
             {baseName ? (
-                <Link to="/toppings">
-                    <button className="base__nextButton">Next</button>
-                </Link>
+                <motion.div
+                    initial={{
+                        x: '-100vw',
+                    }}
+                    animate={{
+                        x: 0,
+                    }}
+                >
+                    <Link to="/toppings">
+                        <button className="base__nextButton">Next</button>
+                    </Link>
+                </motion.div>
             ) : (
                 ''
             )}
