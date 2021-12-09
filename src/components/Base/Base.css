@@ -1,0 +1,46 @@
+.base {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.base__header {
+    font-size: 35px;
+    padding-bottom: 10px;
+    border-bottom: solid white 1px;
+    margin-bottom: 10px;
+}
+
+.base__baseName {
+    display: flex;
+    align-items: center;
+}
+
+.base__baseName > p {
+    margin-top: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 15px;
+    display: flex;
+}
+
+.base__baseNameSelected {
+    font-weight: 600;
+    display: flex;
+}
+
+.base__nextButton {
+    position: absolute;
+    margin-top: 3rem;
+    font-size: 20px;
+    font-weight: 400;
+    border: solid white 1px;
+    outline: none;
+    background: transparent;
+    padding-inline: 40px;
+    padding-block: 10px;
+    border-radius: 999px;
+    color: white;
+    cursor: pointer;
+}

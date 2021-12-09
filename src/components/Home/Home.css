@@ -17,7 +17,7 @@
     margin-bottom: 3rem;
 }
 
-.home__body > button {
+.home__createButton {
     background: transparent;
     color: white;
     border: solid 1px white;
