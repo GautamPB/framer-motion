@@ -22,7 +22,16 @@ const Base = ({ setPizzaBase, baseName }) => {
                     {bases.map((base) => (
                         <div className="base__baseName">
                             <p>{baseName === base ? '>' : ''}</p>
-                            <p
+                            <motion.p
+                                whileHover={{
+                                    color: '#f8e112',
+                                    scale: 1.3,
+                                    originX: 0,
+                                }}
+                                transition={{
+                                    type: 'spring',
+                                    stiffness: 400,
+                                }}
                                 className={
                                     baseName === base
                                         ? 'base__baseNameSelected'
@@ -33,7 +42,7 @@ const Base = ({ setPizzaBase, baseName }) => {
                                 }}
                             >
                                 {base}
-                            </p>
+                            </motion.p>
                         </div>
                     ))}
                 </div>
@@ -52,7 +61,17 @@ const Base = ({ setPizzaBase, baseName }) => {
                         }}
                     >
                         <Link to="/toppings">
-                            <button className="base__nextButton">Next</button>
+                            <motion.button
+                                whileHover={{
+                                    scale: 1.1,
+                                    textShadow:
+                                        '0px 0px 3px rgb(255, 255, 255)',
+                                    boxShadow: '0px 0px 8px rgb(255, 255, 255)',
+                                }}
+                                className="base__nextButton"
+                            >
+                                Next
+                            </motion.button>
                         </Link>
                     </motion.div>
                 ) : (
