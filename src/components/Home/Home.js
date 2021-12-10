@@ -9,6 +9,10 @@ const Home = () => {
                 initial={{
                     opacity: 0,
                 }}
+                transition={{
+                    delay: 0.5,
+                    duration: 1,
+                }}
                 animate={{
                     opacity: 1,
                 }}
